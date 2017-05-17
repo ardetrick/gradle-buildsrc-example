@@ -1,0 +1,12 @@
+group 'com.ardetrick'
+version '1.0-SNAPSHOT'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.5'
+}
+
+apply plugin: com.ardetrick.gradle.basic.BasicPlugin
+
+basic {
+    message = "Overridden message."
+}
